@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BodyComponent } from './components/body/body.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { Html2pdfComponent } from './components/html2pdf/html2pdf.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    SidenavComponent
+    SidenavComponent,
+    Html2pdfComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
