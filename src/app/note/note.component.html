@@ -1,0 +1,17 @@
+<h1>Todo List</h1>
+<br>
+<div class="card">
+    <div style="padding:25px;">
+        <input class="altInput" #newNote>
+        <span>
+            <button class="altBtn" (click)="addNotes(newNote.value)"><i class="fa fa-plus" aria-hidden="true"></i></button><hr/>
+        </span>
+    </div>
+    <div style="padding-left: 25px;">
+        <ul *ngFor="let note of notes">
+            <li>{{note.description}}
+                <button class="altBtnDelete" (click)="deleteNotes(note.id)"><i class="fa fa-close" aria-hidden="true"></i></button>
+            </li>
+        </ul>        
+    </div>
+</div>
